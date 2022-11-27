@@ -28,6 +28,6 @@ bool isEmpty(stacks s);
 bool isFull(stacks s);
 void show(stacks s);
 int menu();
-void listWaifu();
+void listWaifu(string p[]);
 
 #endif // STACK_H_INCLUDED

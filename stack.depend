@@ -17,12 +17,15 @@
 1669478201 source:c:\users\adam\downloads\std_gacha\std gacha\stack.cpp
 	"stack.h"
 
-1669542141 source:c:\users\adam\downloads\std_gacha\std gacha\gachawaifu\main.cpp
+1669543303 source:c:\users\adam\downloads\std_gacha\std gacha\gachawaifu\main.cpp
 	"stack.h"
+	<stdlib.h>
+	<stdio.h>
+	<time.h>
 
-1669474633 c:\users\adam\downloads\std_gacha\std gacha\gachawaifu\stack.h
+1669543115 c:\users\adam\downloads\std_gacha\std gacha\gachawaifu\stack.h
 	<iostream>
 
-1669478201 source:c:\users\adam\downloads\std_gacha\std gacha\gachawaifu\stack.cpp
+1669543132 source:c:\users\adam\downloads\std_gacha\std gacha\gachawaifu\stack.cpp
 	"stack.h"
 

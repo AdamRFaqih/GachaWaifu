@@ -64,11 +64,7 @@ int menu(){
     return pilih;
 }
 
-void listWaifu(){
-    string p[2][50] = {
-        /*SSR*/ {"Elysia", "Raiden Mei", "Kiana", "Bronya"},
-        /*SR*/ {"Kevin", "Eden", "Ei", "Astolfo" }
-    };
+void listWaifu(string p[2][5]){
 
     for(int i = 0; i < 2; i++){
             if(i == 0){
