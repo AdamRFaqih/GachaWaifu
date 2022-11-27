@@ -7,8 +7,8 @@ int main()
 {
     int genbaris, gencolom;
     string p[2][5] = {
-        /*SSR*/ {"Elysia", "Raiden Mei", "Kiana", "Bronya"},
-        /*SR*/ {"Kevin", "Eden", "Ei", "Astolfo" }
+        /*SSR*/ {"Elysia", "Raiden Mei", "Kiana", "Bronya", "Regy", "ShoukoNishimiya", "MakotoNiijima", "NazunaNanakusa", "KaoriMiyazono", "FutabaSakura", "Raphtalia", "Josee"},
+        /*SR*/ {"Kevin", "Eden", "Ei", "Astolfo", "Abdul", "KazumiMishima", "Rem", "KanonNakagawa", "MitsuruKirijo", "IqroGanyuwanto" }
     };
     srand (time(NULL));
     genbaris = rand() % 4;
