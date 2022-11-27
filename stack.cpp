@@ -16,7 +16,7 @@ void push(stacks &s, infotype r){
 }
 void pop(stacks &s, infotype &r){
     if(isEmpty(s) == true){
-        s.T[s.top].waifu = "";
+        r = s.T[s.top];
         s.top--;
     }else{
         cout << "Habis" << endl;
@@ -40,9 +40,9 @@ bool isFull(stacks s){
 }
 void show(stacks s){
     int i;
+    cout <<"Istri Lu: " <<endl;
     while(i <= s.top){
-        cout << s.T[i].waifu << endl;
-        cout << endl;
+        cout << "["<<s.T[i].rarity <<"] "<<s.T[i].waifu << endl;
         i++;
     }
 }
@@ -54,12 +54,13 @@ int menu(){
     cout << "2. Waifu Kamu" << endl;
     cout << "3. Gacha Waifu" << endl;
     cout << "4. Cek Token Gacha" << endl;
+    cout << "5. Ceraikan waifu terakhir" << endl;
     cout << "0. Sudahi saja" << endl;
     cout << "========================" << endl;
     cout << endl;
     cout << "Masukan Nomor: ";
     cin >> pilih;
-    cout << endl;
+    cout << "========================" << endl;
 
     return pilih;
 }
@@ -78,9 +79,35 @@ void listWaifu(string p[2][5]){
             }
             cout << endl;
     }
-    /* - penentuan push berdasarkan nomor rarity dan karakter yang didapat
-    - penentuan pemilihan rarity didapat dari nomor kolom yang didapat, jika 0 maka SSR, jika 1 maka SR
-    - nunggu algoritma perhitungan gacha untuk mendapatkan nomor baris dan kolom
-    - nomor kolom dan baris didapat dari kalkulasi perhitungan gacha
-    */
 }
+
+void gacha(stacks &s, string p[2][5], int &genbaris, int &gencolom){
+    char tentu;
+    infotype r;
+    srand (time(NULL));
+    genbaris = rand() % 4;
+    gencolom = rand() % 2;
+
+    r.rarity = "SSR";
+    if (gencolom == 1){
+        r.rarity = "SR";
+    }
+    r.waifu = p[gencolom][genbaris];
+
+    cout << "You got: " << endl;
+    cout << "["<<r.rarity <<"] "<<r.waifu <<endl;
+    cout << "(Marry Me? " << "[Y]/[N] = ";
+    cin >> tentu;
+    cout << endl;
+
+    if (tentu == 'Y'){
+        push(s, r);
+        cout <<"You are married with " << r.waifu << endl;
+    }else{
+        cout <<"As you wish My Lord" << endl;
+    }
+
+
+}
+
+
