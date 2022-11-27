@@ -1,0 +1,28 @@
+# depslib dependency file v1.0
+1669475313 source:c:\sekolah\kuliah\semester 3\struktur data\tugas\minggu 8\std gacha\main.cpp
+	"stack.h"
+
+1669474633 c:\sekolah\kuliah\semester 3\struktur data\tugas\minggu 8\std gacha\stack.h
+	<iostream>
+
+1669476585 source:c:\sekolah\kuliah\semester 3\struktur data\tugas\minggu 8\std gacha\stack.cpp
+	"stack.h"
+
+1669475313 source:c:\users\adam\downloads\std_gacha\std gacha\main.cpp
+	"stack.h"
+
+1669474633 c:\users\adam\downloads\std_gacha\std gacha\stack.h
+	<iostream>
+
+1669478201 source:c:\users\adam\downloads\std_gacha\std gacha\stack.cpp
+	"stack.h"
+
+1669542141 source:c:\users\adam\downloads\std_gacha\std gacha\gachawaifu\main.cpp
+	"stack.h"
+
+1669474633 c:\users\adam\downloads\std_gacha\std gacha\gachawaifu\stack.h
+	<iostream>
+
+1669478201 source:c:\users\adam\downloads\std_gacha\std gacha\gachawaifu\stack.cpp
+	"stack.h"
+
