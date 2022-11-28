@@ -40,7 +40,7 @@ bool isFull(stacks s){
 }
 void show(stacks s){
     int i;
-    cout <<"Istri Lu: " <<endl;
+    cout <<"Waifu Anda: " <<endl;
     while(i <= s.top){
         cout << "["<<s.T[i].rarity <<"] "<<s.T[i].waifu << endl;
         i++;
@@ -100,7 +100,7 @@ void gacha(stacks &s, string p[2][5], int &genbaris, int &gencolom){
     cin >> tentu;
     cout << endl;
 
-    if (tentu == 'Y'){
+    if (tentu == 'Y' or tentu == 'y'){
         push(s, r);
         cout <<"You are married with " << r.waifu << endl;
     }else{
